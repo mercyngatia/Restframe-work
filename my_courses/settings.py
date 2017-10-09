@@ -25,7 +25,7 @@ SECRET_KEY = '8o@t$&q($qj&djna0##8(2n9x$^g==#%!m#+lqo39o&buelcd)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['my-courses-mercyngatia.c9users.io']
+ALLOWED_HOSTS = []
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 

@@ -16,18 +16,14 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from courses import views
 from rest_framework import routers
-from courses.views import StudentViewSet
+from courses.views import PostViewSet
 
 
-#Routers provide an easy way of automatically determining the URLconf.
 router = routers.DefaultRouter()
-router.register(r'students', StudentViewSet)
+router.register(r'post', PostViewSet)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include(router.urls)),
-    url(r'^$/', views.welcome),
-    url(r'^students/$', views.students, name = 'students'),
 ]
